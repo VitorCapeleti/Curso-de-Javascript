@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome!')
+        var idade = Number(window.prompt('Digite sua idade'))
+        var idadefml = Number(window.prompt('Digite a idade da sua mãe'))
+        var some = idadefml + idade
+        document.write(`Olá ${nome}, Você tem ${idade} anos, Seja bem vindo ao nosso sistema <br>`)
+        document.write(`Veja ${nome}, como é seu nome em maiúsculo ${nome.toLocaleUpperCase()} <br>`)
+        document.write(`Veja ${nome}, como é seu nome em minúsculo ${nome.toLocaleLowerCase()} <br>`)
+        document.write(`A sua idade ${idade}, mais a idade da sua mãe ${idadefml} é igual a ${some}`)
+    </script>
+</body>
+</html>

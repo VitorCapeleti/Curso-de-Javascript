@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão de increver-se</title>
+    <style>
+        body{
+            align-items: center;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 100px;
+        }
+        #submit{
+            border: none;
+            padding: 15px;
+            border-radius: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            background: rgb(255, 0, 0);
+            width: 140px;
+            height: 60px;
+        }
+        .like{
+            border: none;
+            padding: 15px;
+            border-radius: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            background: rgb(121, 121, 121);
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <button id="submit" onclick="clicar()">
+        Inscreva-se
+    </button>
+
+    <button id="like" class="like" onclick="clicarlike()">
+        <lord-icon
+            src="https://cdn.lordicon.com/xyboiuok.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            style="width:30px;height:30px; ;align-items: center;text-align: center;">
+        </lord-icon>
+    </button>
+
+    <button id="favorite" class="like" onclick="clicarfavorite()">
+        <lord-icon
+            src="https://cdn.lordicon.com/prjooket.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            style="width:30px;height:30px;">
+        </lord-icon>
+    </button>
+
+    <script>
+        function clicar(){
+            var btn = window.document.getElementById('submit')
+
+            btn.innerText = 'Inscrito'
+            btn.style.background = 'grey'
+        }
+        function clicarlike(){
+            var btnlike = window.document.getElementById('like')
+
+            btnlike.style.background = 'blue'
+        }
+        function clicarfavorite(){
+            var btnfavorite = window.document.getElementById('favorite')
+            
+            btnfavorite.style.background = 'blue'
+        }
+    </script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+</html>
